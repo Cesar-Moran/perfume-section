@@ -13,7 +13,7 @@
     />
 
     <title>Frontend Mentor | Product preview card component</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/input.css" />
     <link rel="stylesheet" href="dist/output.css" />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -22,9 +22,9 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
   </head>
-  <body class="flex flex-col h-screen px-4 py-6 bg-cream">
+  <body class="flex flex-col h-screen justify-center items-center px-4 bg-cream ">
     <article
-      class="flex flex-col  items-center font-montserrat rounded-xl bg-white"
+      class="flex flex-col justify-center items-center font-montserrat rounded-xl bg-white leading-loose lg:flex-row lg:max-w-2xl"
     >
       <div>
         <picture>
@@ -38,25 +38,25 @@
           <img
             src="images/image-product-desktop.jpg"
             alt=""
-            class="rounded-t-xl"
+            class="rounded-t-xl lg:rounded-none lg:rounded-l-xl"
           />
         </picture>
       </div>
       <!-- Separator between the two divs. -->
-      <div class="flex flex-col items-start p-7">
-        <span class="uppercase tracking-[0.3rem] text-xs text-darkGrayishBlue mb-3">perfume</span>
-        <h1 class="font-fraunces font-bold text-4xl leading-8 mb-6">Gabrielle Essence Eau De Parfum</h1>
-        <p class="text-darkGrayishBlue font-montserrat leading-normal mb-6">
+      <div class="flex flex-col items-start p-7 lg:max-w-[21rem] lg:h-full">
+        <span class="uppercase tracking-[0.3rem] text-xs text-darkGrayishBlue mb-4 lg:text-base">perfume</span>
+        <h1 class="font-fraunces font-bold text-3xl leading-8 mb-5 lg:text-[40px] lg:leading-[35px]">Gabrielle Essence Eau De Parfum</h1>
+        <p class="text-darkGrayishBlue font-montserrat text-[14.5px] leading-normal mb-6 lg:mb-9 lg:text-base">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
 
-        <div>
-          <b class="font-montserrat text-darkcyan text-4xl">$149.99 </b>
-          <span>$169.99</span>
+        <div class="flex flex-row items-center gap-5 mb-7 lg:mb-8">
+          <b class=" text-darkcyan text-3xl font-fraunces lg:text-4xl">$149.99 </b>
+          <span class="text-darkGrayishBlue line-through text-sm">$169.99</span>
         </div>
 
-         <button>Add to Cart</button>
+         <button class="p-3 bg-darkcyan rounded-md w-full text-white flex flex-row justify-center items-center hover:bg-darkercyan"><img src="/images/icon-cart.svg" alt="" class="mr-2 font-bold">Add to Cart</button>
       </div>
     </article>
 
